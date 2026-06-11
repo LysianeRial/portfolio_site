@@ -1,0 +1,146 @@
+.aboutme {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .aboutme-bold {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 60px;
+  }
+
+  .aboutme h2 {
+    color: #000;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    text-transform: uppercase;
+    padding-block: 30px;
+    padding-left: 30px;
+  }
+
+  .title-space {
+    padding-left: 30vw;
+  }
+
+  .aboutme-light {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 30px;
+  }
+
+  .aboutme-photo {
+    max-width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 60px;
+    filter: grayscale(100%);
+  }
+
+  // .aboutme-title-space {
+  //   position: absolute;
+  //   top: 230px;
+  //   left: 200px;
+  // }
+
+  // .aboutme-h2 {
+  //   // margin-bottom: 60px;
+  // }
+
+  .aboutme-title {
+    // position: absolute;
+    // top: 230px;
+    // left: 200px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutme {
+    width: 100vw;
+    padding-block: 100px;
+  }
+
+  .aboutme-photo {
+    max-width: 100%;
+  }
+
+  .aboutme-bold {
+    color: #000;
+    font-family: Switzer;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .aboutme h2 {
+    color: #000;
+    font-family: Switzer;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    text-transform: uppercase;
+    padding-block: 90px;
+  }
+
+  .aboutme img {
+    max-width: 90%;
+    border-radius: 30px;
+    filter: grayscale(100%);
+  }
+
+  .aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme-light {
+    color: #000;
+    font-family: Switzer;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .aboutme-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-space {
+    padding-left: 18vw;
+  }
+}
+
+@media (min-width: 1919px) {
+  .aboutme {
+    width: 100vw;
+    padding-block: 160px;
+  }
+
+  .aboutme h2 {
+    color: #000;
+    font-family: Switzer;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    text-transform: uppercase;
+    padding-block: 90px;
+  }
+
+  .title-space {
+    padding-left: 16vw;
+  }
+}

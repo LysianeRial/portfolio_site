@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+  .photo {
+    width: 100vw;
+    padding-block: 15px;
+  }
+
+  .photo h2 {
+    color: #000;
+    font-family: Switzer;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+  }
+
+  .photo img:not(.photo-small):not(.photo-small-horizontal) {
+    width: 412px;
+    height: 618px;
+    object-fit: cover; /* pour remplir le cadre */
+    border-radius: 30px;
+  }
+
+  .photo-group {
+    display: flex; /* images côte à côte */
+    overflow-x: auto; /* scroll horizontal */
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+  }
+
+  .photo-group-column {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex-shrink: 0;
+  }
+
+  .photo-small {
+    width: 197px;
+    height: 295px;
+    border-radius: 20px;
+  }
+
+  .photo-small-horizontal {
+    width: 444px;
+    height: 296px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 767) {
+  .photo {
+    width: 100vw;
+    padding-block: 140px;
+  }
+
+  .photo img:not(.photo-small):not(.photo-small-horizontal) {
+    width: 274px;
+    height: 412px;
+    object-fit: cover; /* pour remplir le cadre */
+    border-radius: 15px;
+  }
+
+  .photo-group {
+    display: flex; /* images côte à côte */
+    overflow-x: auto; /* scroll horizontal */
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+  }
+
+  .photo-group-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+
+  .photo-small {
+    width: 131px;
+    height: 196px;
+    border-radius: 10px;
+  }
+
+  .photo-small-horizontal {
+    width: 290px;
+    height: 194px;
+    border-radius: 10px;
+  }
+
+  .photo h2 {
+    color: #000;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    // margin-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .photo {
+    width: 100vw;
+    padding-block: 80px;
+  }
+}

@@ -1,0 +1,63 @@
+.interface {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .interface h2 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0.8;
+  }
+  .interface-image {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+
+  .interface {
+    padding-block: 70px;
+  }
+
+  .interface-title-space {
+    padding-left: 9vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .interface {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 90px;
+  }
+
+  .interface-image {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .interface h2 {
+    color: white;
+    font-family: Switzer;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0.8;
+    padding-top: 50px;
+  }
+  .interface-title-space {
+    padding-left: 18vw;
+  }
+}
+
+@media (min-width: 1919px) {
+  .interface {
+    width: 100vw;
+    padding-block: 160px;
+  }
+}

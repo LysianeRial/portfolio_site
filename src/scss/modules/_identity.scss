@@ -1,0 +1,278 @@
+.identity {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .identity {
+    width: 100vw;
+    padding-block: 50px;
+  }
+
+  .identity h2 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    text-transform: uppercase;
+  }
+
+  .identity-title-space {
+    padding-left: 20vw;
+  }
+
+  .identity-bold {
+    color: #000;
+    font-family: Switzer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 50px;
+  }
+
+  .identity-light {
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 50px;
+  }
+
+  .identity-mockup1 {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .identity-mockup2 {
+    border-radius: 15px;
+  }
+  .identity-moodboard {
+    border-radius: 15px;
+  }
+
+  .identity-flower {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .identity-bracelet {
+    width: 50%;
+    aspect-ratio: 126/67;
+    margin-left: 50%;
+    margin-top: 0%;
+  }
+
+  .identity-tickets {
+    max-width: 95%;
+    border-radius: 15px;
+  }
+
+  .identity-ticket {
+    max-width: 95%;
+    border-radius: 15px;
+  }
+
+  .identity-web {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+
+  .identity-bag {
+    max-width: 50%;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .identity-chocolate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .identity-group-tickets {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .identity-arrow {
+    background: transparent;
+    border: none;
+    display: flex; /* active flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center;
+  }
+
+  .identity-arrow svg {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .identity {
+    width: 100vw;
+    padding-block: 80px;
+  }
+
+  .identity-title-space {
+    padding-left: 18vw;
+  }
+
+  .identity-bold {
+    color: #000;
+    font-family: Switzer;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 70px;
+    margin-top: 80px;
+  }
+
+  .identity-light {
+    color: #000;
+    font-family: Switzer;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .identity h2 {
+    color: black;
+    font-family: Switzer;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    text-transform: uppercase;
+  }
+
+  .identity-mockup1 {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .identity-mockup2 {
+    border-radius: 30px;
+  }
+
+  .identity-moodboard {
+    border-radius: 30px;
+  }
+
+  .identity-bracelet {
+    width: 437px;
+    height: 232px;
+    aspect-ratio: 437/232;
+    margin-left: 58%;
+  }
+
+  .identity-ticket {
+    max-width: 98%;
+    border-radius: 30px;
+  }
+
+  .identity-tickets {
+    max-width: 98%;
+    border-radius: 30px;
+  }
+
+  .identity-bag {
+    width: 100%;
+  }
+
+  .identity-web {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .identity-flower {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .identity-tisanes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .identity-group-tickets {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .identity-group-web-bag {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .identity a {
+    margin: auto;
+    margin-top: 60px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .identity-arrow svg {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+
+  .identity-arrow {
+    display: flex; /* active flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@media (min-width: 1919px) {
+  .identity {
+    width: 100vw;
+    padding-block: 140px;
+  }
+
+  .identity-title-space {
+    padding-left: 16vw;
+  }
+}
