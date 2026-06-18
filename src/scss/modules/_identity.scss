@@ -246,6 +246,8 @@
     width: 100px;
     height: 100px;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     animation: bounce 1.5s infinite ease-in-out;
   }
 

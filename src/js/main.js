@@ -81,7 +81,7 @@ function animations() {
         trigger: aboutMe,
         start: "top 25%",
         toggleActions: "play none none reverse",
-        markers: true,
+        // markers: true,
 
         //  onLeaveBack: () => {
         //   gsap.to([aboutMeGroup, ".aboutme-h2", ".aboutme-h2 span"], {
@@ -145,7 +145,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -161,7 +161,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -177,7 +177,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -198,7 +198,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -221,7 +221,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -237,7 +237,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -253,7 +253,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -283,7 +283,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -298,7 +298,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -314,7 +314,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -330,7 +330,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -346,7 +346,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -362,7 +362,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -378,7 +378,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -394,7 +394,7 @@ function animations() {
         // end: "+=300px",
         // pin: true,
         // scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
   }
