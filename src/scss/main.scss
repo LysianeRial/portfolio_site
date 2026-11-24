@@ -21,3 +21,75 @@
 //   background-color: rgba(86, 61, 124, 0.15);
 //   border: 1px solid rgba(86, 61, 124, 0.2);
 // }
+
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* CURSEUR PERSONNALISÉ */
+
+.image-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 65px;
+  height: 65px;
+  border: 3.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(3px);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 25px rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  z-index: 10000;
+}
+
+.image-cursor.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.photo-group img,
+.identity img,
+.interface img {
+  cursor: none;
+}

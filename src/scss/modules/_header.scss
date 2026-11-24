@@ -23,100 +23,16 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-  .header-nav {
-    opacity: 0; /* par défaut, le menu a une opacité de 0 */
-    pointer-events: none; /* par défaut, le menu ne peut pas être cliqué */
-    transition: opacity 0.3s;
-    transform: translateX(
-      100%
-    ); /* par défaut, on décale le menu de 100% vers la droite */
-    transition: transform 0.3s;
-    overflow: hidden;
-  }
-
-  .header-nav.is-active {
-    opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
-    pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
-    transform: translateX(0);
-    display: flex;
-    flex-direction: row;
-    gap: 90px;
-    padding-bottom: 20px;
-  }
-
-  .header-nav a {
-    text-decoration: none;
-  }
-
-  .header-nav a:hover {
-    text-decoration: underline;
-  }
-
-  .header {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .header-burger {
-    position: absolute;
-    top: 50px;
-    left: 490px;
-    max-width: 80px;
-    z-index: 10;
-    cursor: pointer;
-  }
-
-  .header h2 {
-    position: absolute;
-    top: 90px;
-    left: 300px;
-  }
-
+@media (min-width: 1600px) {
   .header h1 {
-    margin-top: 20px;
-  }
-
-  .header-title {
-    margin-bottom: 50px;
-  }
-
-  .header-nav-desktop {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-burger {
-    position: absolute;
-    top: 50px;
-    left: 390px;
-    max-width: 80px;
-    z-index: 10;
-    cursor: pointer;
-  }
-
-  .header h2 {
-    position: absolute;
-    top: 90px;
-    left: 230px;
-  }
-
-  .header h1 {
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-
-  .header-nav.is-active {
-    opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
-    pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
-    transform: translateX(0);
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-bottom: 20px;
-    justify-content: center;
-    color: grey;
+    color: #fff;
+    font-family: Switzer;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 200px;
   }
 }
 
@@ -237,15 +153,174 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 767px) {
+  .header-nav {
+    opacity: 0; /* par défaut, le menu a une opacité de 0 */
+    pointer-events: none; /* par défaut, le menu ne peut pas être cliqué */
+    transition: opacity 0.3s;
+    transform: translateX(
+      100%
+    ); /* par défaut, on décale le menu de 100% vers la droite */
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+
+  .header-nav.is-active {
+    opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
+    pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding-bottom: 20px;
+  }
+
+  .header-nav a {
+    text-decoration: none;
+  }
+
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+
+  .header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-burger {
+    position: absolute;
+    top: 50px;
+    left: 490px;
+    max-width: 80px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .header h2 {
+    position: absolute;
+    top: 90px;
+    left: 300px;
+  }
+
   .header h1 {
-    color: #fff;
-    font-family: Switzer;
-    font-size: 180px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 200px;
+    margin-top: 20px;
+  }
+
+  .header-title {
+    margin-bottom: 50px;
+  }
+
+  .header-nav-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-burger {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    max-width: 80px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .header h2 {
+    position: absolute;
+    top: 90px;
+    left: 230px;
+  }
+
+  .header h1 {
+    margin-top: 20px;
+    // margin-left: 30px;
+  }
+
+  .header-nav.is-active {
+    opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
+    pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+    color: grey;
+  }
+}
+
+@media (max-width: 412px) {
+  .header-title {
+    margin-top: 60px;
+    height: max-content;
+  }
+
+  .header h1 {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 50px;
+    z-index: 1;
+  }
+
+  .header h2 {
+    // position: absolute;
+    // margin-top: -10px;
+    font-size: 30px;
+    position: unset;
+    margin-left: 177px;
+    // margin-right: 50px;
+    // white-space: nowrap;
+  }
+
+  .header-burger {
+    position: absolute;
+    left: unset;
+    right: 5px;
+    // left: 0;
+    top: 12px;
+    // position: absolute;
+    top: 78px;
+    // left: 20px;
+    max-width: 70px;
+    z-index: 998;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    width: max-content;
+    height: max-content;
+  }
+
+  .header-nav {
+    opacity: 0; /* par défaut, le menu a une opacité de 0 */
+    pointer-events: none; /* par défaut, le menu ne peut pas être cliqué */
+    transition: opacity 0.3s;
+    transform: translateX(
+      100%
+    ); /* par défaut, on décale le menu de 100% vers la droite */
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+
+  .header-nav.is-active {
+    opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
+    pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding-bottom: 20px;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: white;
+    font-size: 28px;
   }
 }

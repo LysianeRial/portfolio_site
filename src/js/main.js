@@ -5,14 +5,24 @@ gsap.registerPlugin(ScrollTrigger);
 var burger = document.querySelector(".header-burger");
 var menu = document.querySelector(".header-nav");
 
+const menuElements = [...menu.querySelectorAll("a")];
+
 function toggleMenu() {
-  menu.classList.toggle("is-active");
+  menu.classList.add("is-active");
 }
+
+console.log(menuElements);
+
+menuElements.map((el) => {
+  el.addEventListener("click", () => {
+    menu.classList.remove("is-active");
+  });
+});
 
 burger.addEventListener("click", toggleMenu);
 
 function animations() {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 800) {
     // #1 HEADER
 
     // Sélectionner les éléments nécessaires
@@ -407,27 +417,27 @@ animations();
 
 // #ZOOM IMAGES
 
-const images = document.querySelectorAll(".zoom-img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
+// const images = document.querySelectorAll(".zoom-img");
+// const lightbox = document.getElementById("lightbox");
+// const lightboxImg = document.getElementById("lightbox-img");
 
-// ouvrir image
-images.forEach((img) => {
-  img.addEventListener("click", () => {
-    lightbox.classList.add("active");
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-  });
-});
+// // ouvrir image
+// images.forEach((img) => {
+//   img.addEventListener("click", () => {
+//     lightbox.classList.add("active");
+//     lightbox.style.display = "flex";
+//     lightboxImg.src = img.src;
+//   });
+// });
 
-// fermer au clic
-lightbox.addEventListener("click", () => {
-  lightbox.classList.remove("active");
-  lightbox.style.display = "none";
-});
+// // fermer au clic
+// lightbox.addEventListener("click", () => {
+//   lightbox.classList.remove("active");
+//   lightbox.style.display = "none";
+// });
 
-document.body.style.overflow = "hidden";
-document.body.style.overflow = "auto";
+// document.body.style.overflow = "hidden";
+// document.body.style.overflow = "auto";
 
 // #MOUSE TRAIL
 
@@ -526,3 +536,85 @@ document.addEventListener("mousemove", (e) => {
 
 //   draw();
 // });
+
+// AGRANDISSEMENT IMAGE
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".lightbox-close");
+
+// Sélectionne toutes les images de ta galerie
+document
+  .querySelectorAll(".photo-group img, .identity img, .interface img")
+  .forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+// Fermer avec la croix
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+// Fermer en cliquant sur le fond
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+});
+
+// Fermer avec Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    lightbox.classList.remove("active");
+  }
+});
+
+document.querySelectorAll(".photo-group img").forEach((img) => {
+  img.addEventListener("click", () => {
+    console.log("Image cliquée !");
+  });
+});
+
+// CURSEUR PERSONNALISÉ
+
+// CURSEUR PERSONNALISÉ
+
+const imageCursor = document.querySelector(".image-cursor");
+const cursorText = imageCursor.querySelector("span");
+
+// SECTION PHOTO : SCROLL
+document.querySelectorAll(".photo-group img").forEach((img) => {
+  img.addEventListener("mouseenter", () => {
+    cursorText.textContent = "SCROLL";
+    imageCursor.classList.add("active");
+  });
+
+  img.addEventListener("mouseleave", () => {
+    imageCursor.classList.remove("active");
+  });
+
+  img.addEventListener("mousemove", (e) => {
+    imageCursor.style.left = e.clientX + "px";
+    imageCursor.style.top = e.clientY + "px";
+  });
+});
+
+// SECTION IDENTITY : VIEW
+document.querySelectorAll(".identity img, .interface img").forEach((img) => {
+  img.addEventListener("mouseenter", () => {
+    cursorText.textContent = "VIEW";
+    imageCursor.classList.add("active");
+  });
+
+  img.addEventListener("mouseleave", () => {
+    imageCursor.classList.remove("active");
+  });
+
+  img.addEventListener("mousemove", (e) => {
+    imageCursor.style.left = e.clientX + "px";
+    imageCursor.style.top = e.clientY + "px";
+  });
+});
