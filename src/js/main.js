@@ -580,15 +580,15 @@ document.querySelectorAll(".photo-group img").forEach((img) => {
 
 // CURSEUR PERSONNALISÉ
 
-// CURSEUR PERSONNALISÉ
-
 const imageCursor = document.querySelector(".image-cursor");
-const cursorText = imageCursor.querySelector("span");
+const cursorText = imageCursor.querySelector(".cursor-text");
+const cursorArrow = imageCursor.querySelector(".cursor-arrow");
 
 // SECTION PHOTO : SCROLL
 document.querySelectorAll(".photo-group img").forEach((img) => {
   img.addEventListener("mouseenter", () => {
     cursorText.textContent = "SCROLL";
+    cursorArrow.style.display = "block";
     imageCursor.classList.add("active");
   });
 
@@ -602,10 +602,11 @@ document.querySelectorAll(".photo-group img").forEach((img) => {
   });
 });
 
-// SECTION IDENTITY : VIEW
+// SECTION IDENTITY ET INTERFACE : VIEW
 document.querySelectorAll(".identity img, .interface img").forEach((img) => {
   img.addEventListener("mouseenter", () => {
     cursorText.textContent = "VIEW";
+    cursorArrow.style.display = "none";
     imageCursor.classList.add("active");
   });
 

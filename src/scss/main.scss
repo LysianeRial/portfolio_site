@@ -93,3 +93,19 @@
 .interface img {
   cursor: none;
 }
+
+.image-cursor {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cursor-arrow {
+  font-size: 21px;
+  line-height: 0.8;
+  margin-bottom: -2px;
+}
+
+.cursor-text {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
